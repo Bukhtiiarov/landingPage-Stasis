@@ -1,0 +1,320 @@
+    body {
+        transition: padding-left .2s ease-in-out;
+    }
+    
+    h1,
+    h2,
+    h3,
+    h4,
+    h5 {
+        color: #4e5d60;
+        font-weight: lighter;
+        font-family: 'Exo 2';
+    }
+    
+    p {
+        font-size: .9rem;
+        color: #4e5d60;
+        font-weight: lighter;
+        font-family: 'Exo 2';
+    }
+    
+    li {
+        list-style-type: none;
+    }
+    
+    *:focus {
+        outline: none !important;
+    }
+    
+    .sidenav-active {
+        padding-left: 300px;
+    }
+    
+    .content-main {
+        min-height: 100vh;
+    }
+    
+    .home-screen {
+        background: url('/app/img/graphic.png');
+        background-size: 100%;
+        display: flex;
+        height: 100vh;
+        max-width: 90%;
+        margin: auto;
+        min-height: 500px;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+    }
+    
+    .home-screen-logo {
+        width: 350px;
+        margin-top: -10%;
+        max-width: 70%;
+        text-align: center;
+    }
+    
+    .home-screen-desc {
+        text-align: center;
+        max-width: 440px;
+    }
+    
+    .home-screen-desc__line1 {
+        display: block;
+        margin-top: 25px;
+        font-size: 1.9rem;
+        color: #4e5d60;
+        margin: 1.7rem 0 1.5rem;
+    }
+    
+    .home-screen-desc__line2 {
+        font-size: 1.3rem;
+        color: #4e5d60;
+    }
+    
+    .page-title {
+        margin-bottom: 2rem;
+    }
+    
+    .page-parag {
+        margin-bottom: 6rem;
+    }
+    /* Advantages */
+    
+    .advnt__title1 {
+        display: flex;
+        align-items: center;
+        font-size: 1.2rem;
+        font-weight: 500;
+    }
+    
+    .advnt__title1:before {
+        content: '';
+        display: block;
+        padding: 25px;
+        margin-right: 1.5rem;
+        margin-bottom: 0.5rem;
+        background: url(/app/img/blockchain.psd.png);
+        background-size: 100% 100%;
+    }
+    
+    .advnt__title2 {
+        display: flex;
+        align-items: center;
+        font-size: 1.2rem;
+        font-weight: 500;
+    }
+    
+    .advnt__title2:before {
+        content: '';
+        display: block;
+        padding: 25px;
+        margin-right: 1.5rem;
+        margin-bottom: 0.5rem;
+        background: url(/app/img/shield.png);
+        background-size: 100% 100%;
+    }
+    
+    .advnt__title3 {
+        display: flex;
+        align-items: center;
+        font-size: 1.2rem;
+        font-weight: 500;
+    }
+    
+    .advnt__title3:before {
+        content: '';
+        display: block;
+        padding: 25px;
+        margin-right: 1.5rem;
+        margin-bottom: 0.5rem;
+        background: url(/app/img/stability.psd.png);
+        background-size: 100% 100%;
+    }
+    
+    .advnt__title4 {
+        display: flex;
+        align-items: center;
+        font-size: 1.2rem;
+        font-weight: 500;
+    }
+    
+    .advnt__title4:before {
+        content: '';
+        display: block;
+        padding: 25px;
+        margin-right: 1.5rem;
+        margin-bottom: 0.5rem;
+        background: url(/app/img/resevers.psd.png);
+        background-size: 100% 100%;
+    }
+    /* Hummb */
+    
+    .sidenav-wrapper {
+        display: flex;
+        justify-content: center;
+        position: fixed;
+        height: 100%;
+        width: 300px;
+        z-index: 10;
+        top: 0;
+        left: -300px;
+        background-color: #345972;
+        transition: left .2s ease-in-out;
+    }
+    
+    .sidenav-active .sidenav-wrapper {
+        left: 0;
+    }
+    
+    .sidenav__header {
+        display: flex;
+        justify-content: left;
+        align-items: center;
+        flex-direction: row;
+    }
+    
+    .sidenav-toggle-wrapper {
+        position: fixed;
+        padding: 1.8rem;
+    }
+    
+    .sidenav-toggle-wrapper__btn {
+        border: none;
+        padding: 1.9%;
+        font-size: 2rem;
+        outline: 0;
+        background-color: transparent;
+        color: #345972;
+        box-shadow: none;
+    }
+    
+    .sidenav-btn-close {
+        display: none;
+        border: none;
+        border-style: none;
+        padding: 2%;
+        font-size: 2rem;
+        outline: 0;
+        background-color: transparent;
+        color: white;
+        box-shadow: none;
+    }
+    
+    .sidenav li a {
+        list-style-type: none;
+        padding: .5rem;
+        text-decoration: none;
+        font-size: 15px;
+        color: white;
+        display: block;
+        transition: 0.3s;
+        cursor: pointer;
+    }
+    
+    .sidenav li a:hover {
+        color: #00c8ff;
+    }
+    
+    .sidenav__logo {
+        width: 8rem;
+        margin: 15% 3%;
+        display: inline-block;
+        color: white;
+    }
+    
+    .btn-scroll-down {
+        position: absolute;
+        bottom: 2rem;
+        width: 4rem;
+        height: 4rem;
+        cursor: pointer;
+        background-color: transparent;
+        border-radius: 50%;
+        border: 1px solid #02c8ff;
+        color: #345871;
+        font-size: 2rem;
+    }
+    
+    .btn-scroll-down a {
+        color: #345871
+    }
+    
+    .sidenav {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        padding-top: 1.5rem;
+    }
+    
+    .sidenav-header {
+        width: 100%;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        flex-direction: row;
+    }
+    
+    .sidenav-menu {
+        list-style-type: none;
+        display: flex;
+        flex-direction: column;
+        margin-top: 1.5rem;
+        padding: 0;
+    }
+    
+    @media (max-width: 767.98px) {
+        .sidenav-active {
+            padding-left: 0;
+        }
+        .sidenav-wrapper {
+            width: 100%;
+            left: -100%;
+        }
+        .sidenav-btn-close {
+            display: inline-block;
+        }
+    }
+    
+    .scrollbar {
+        margin-left: 30px;
+        float: left;
+        height: 300px;
+        width: 65px;
+        background: #fff;
+        overflow-y: scroll;
+        margin-bottom: 25px;
+    }
+    
+    .scrollbtn {
+        display: flex;
+        justify-content: flex-end;
+    }
+    
+    .scrollbtn__back-to-top {
+        position: fixed;
+        display: none;
+        bottom: 0.5rem;
+        width: 3rem;
+        height: 3rem;
+        cursor: pointer;
+        background-color: transparent;
+        border: none;
+        color: #345871;
+        font-size: 2rem;
+        transition: background 0.5s;
+        z-index: 11;
+        text-align: center;
+    }
+    
+    .scrollbtn__back-to-top i {
+        color: #345871;
+    }
+    
+    @media (max-width: 768px) {
+        .scrollbtn__back-to-top {
+            bottom: 0.5rem;
+        }
+    }
